@@ -1,7 +1,7 @@
 const NavigationBody = () =>{
 
     return(
-        <div className="w-full h-93 flex justify-around items-center">
+        <div className="w-full h-[93px] flex justify-around items-center">
             <span className="flex items-center gap-2">
                 <img className="w-8 h-8" src="public/navigation/Logo.png" alt="Logo" />
                 <h1 className="text-3xl ">Ecobazar</h1>
