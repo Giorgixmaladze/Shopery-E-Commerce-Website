@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 const HomeIntro = () => {
 
     return (
-        <div className="w-[1319px] h-[600px]">
-            <div className="w-[872px] h-[600px] rounded-[10px] bg-linear-to-r from-[#003817]  to-[#00c45f]">
+        <div className="w-[1319px] h-[600px] grid grid-cols-3">
+            <div className="w-[872px] h-[600px] rounded-[10px] bg-linear-to-r col-span-3 from-[#003817]  to-[#00c45f]">
                 <div className="bg-[url('public/Home/girl.png')] w-full h-full flex items-center bg-no-repeat bg-right pl-[50px] bg-size-[800px]">
                     <div className=" flex flex-col items-baseline gap-[28px] w-6/12">
 
