@@ -1,5 +1,5 @@
-import { Select, Option } from "@material-tailwind/react";
-import NavigationHeader from "./NavigationHeader";
+
+
 import NavigationBody from "./NavigationBody";
 import NavigationFooter from "./NavigationFooter";
 
@@ -8,7 +8,6 @@ const Navigation = () => {
 
     return (
         <header className="w-full h-[250px] flex flex-col gap-1">
-            <NavigationHeader />
             <div className="w-full border border-gray-300 h-0"></div>
             <NavigationBody />
             <NavigationFooter/>

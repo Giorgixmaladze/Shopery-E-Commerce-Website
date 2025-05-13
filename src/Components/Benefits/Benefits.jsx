@@ -1,4 +1,4 @@
-import Benefit from "./Home-utils/benefit"
+import Benefit from "./benefit"
 
 const Benefits = () =>{
     return(

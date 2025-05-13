@@ -1,9 +1,9 @@
-import ViewAll from "./Home-utils/ViewAll"
+import ViewAll from "./ViewAll"
 
-const CategoriesHeader = () =>{
+const CategoriesHeader = ({text}) =>{
     return(
         <div className="w-full flex justify-between items-center">
-            <h2 className="font-bold text-[38px]">Popular Categories</h2>
+            <h2 className="font-bold text-[38px]">{text}</h2>
             <ViewAll />
         </div>
     )

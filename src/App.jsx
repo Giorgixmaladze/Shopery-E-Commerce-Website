@@ -1,8 +1,7 @@
-import { useState } from 'react'
-import Navigation from './Components/navigation/Navigation'
-import Home from './Components/Home-Page/Home-main'
+import { useState } from 'react';
+import Home from './Pages/Home-Page/Home-main'
 import { Route, Routes } from 'react-router-dom'
-import Shop from './Components/Shop-Page/Shop-main'
+import Shop from './Pages/Shop-Page/Shop-main';
 function App() {
 
 

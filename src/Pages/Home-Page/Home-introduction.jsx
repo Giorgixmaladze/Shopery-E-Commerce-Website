@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import ShopNow from "./Home-utils/Shop-Now-component"
+import ShopNow from "../../Components/Shop-Now/Shop-Now-component"
 
 const HomeIntro = () => {
 
