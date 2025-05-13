@@ -1,10 +1,11 @@
 import Navigation from "./Navigation"
 
 const Header = () => {
+ 
     return (
         <header className="w-full">
 
-            <div className="w-full h-[42px] flex items-center justify-around ">
+            <div className="w-full h-[42px] flex items-center justify-evenly max-sm:flex-col max-sm:h-40 ">
                 <span className="flex items-center gap-2">
                     <img src="public/navigation/Map-Pin.png" alt="" />
                     <p className="text-sm font-light text-gray-600">Store Location: Lincoln- 344, illionis, Chicago, USA</p>
@@ -25,6 +26,7 @@ const Header = () => {
                 </div>
             </div>
             <Navigation />
+            
         </header>
 
 

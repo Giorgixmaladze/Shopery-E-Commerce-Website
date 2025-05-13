@@ -3,22 +3,29 @@ import Benefits from "../../Components/Benefits/Benefits"
 import Categories from "./Categories"
 import HomeIntro from "./Home-introduction"
 import { fetchCategory } from "../../services/api"
+import SidebarProvider from "../../context/SidebarContext"
+import { useContext } from "react"
+import { SidebarContext } from "../../context/SidebarContext"
+import Sidebar from "../../Components/Sidebar/Sidebar"
 
 const Home = () => {
+    const {sidebarOn} = useContext(SidebarContext)
 
-    
     return (
-        <div className="flex flex-col items-center">
-            <Header />
-            <div className="w-[1319px] min-h-screen flex flex-col gap-[50px]">
-                <HomeIntro />
-                <Benefits />
-                <Categories />
+
+            <div className="w-screen h-screen flex flex-col items-center">
+                {sidebarOn?(
+                    <Sidebar />
+                ):(<p></p>)}
+                <Header />
+                <div className="w-[1319px] min-h-screen flex flex-col gap-[50px]">
+                    <HomeIntro />
+                    <Benefits />
+                    <Categories />
+                </div>
             </div>
 
 
-
-        </div>
 
     )
 }
