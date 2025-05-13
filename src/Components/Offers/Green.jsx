@@ -1,0 +1,32 @@
+import ShopNow from "../Shop-Now/Shop-Now-component"
+
+const Green = () => {
+    return (
+        <div className="w-[872px] h-[600px] rounded-[10px] bg-linear-to-r row-start-1 col-start-1 from-[#003817]  to-[#00c45f]">
+            <div className="bg-[url('public/Home/girl.png')] w-full h-full flex items-center bg-no-repeat bg-right pl-[50px] bg-size-[800px]">
+                <div className=" flex flex-col items-baseline gap-[28px] w-6/12">
+
+                    <h1 className="text-white text-5xl font-medium">Fresh & Healthy Organic Food</h1>
+                    <div className="border-l-[2px] pl-[20px] border-l-[#84D187]">
+                        <span className="flex gap-[10px] items-center">
+                            <h2 className="text-white text-xl">Sale up to </h2>
+                            <div className="w-[108px] h-[38px] flex rounded-[5px] justify-center items-center bg-[#FF8A00]">
+                                <b className="text-white text-xl">30% OFF</b>
+                            </div>
+                        </span>
+
+                        <p className="text-white font-light">Free shipping on all your order.</p>
+                    </div>
+
+
+                    <button className="w-[191px] h-[51px] bg-white text-mwvane flex items-center justify-center gap-[10px] rounded-4xl font-bold">
+                        <ShopNow />
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Green
