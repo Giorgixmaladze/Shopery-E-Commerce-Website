@@ -1,8 +1,8 @@
 import ShopNow from "../Shop-Now/Shop-Now-component"
-
+import { Link } from "react-router-dom"
 const Green = () => {
     return (
-        <div className="w-[872px] h-[600px] rounded-[10px] bg-linear-to-r row-start-1 col-start-1 from-[#003817]  to-[#00c45f]">
+        <div className="w-[872px] h-[600px] rounded-[10px] bg-linear-to-r row-start-1 col-start-1 from-[#003817] to-[#00c45f] max-sm:hidden">
             <div className="bg-[url('public/Home/girl.png')] w-full h-full flex items-center bg-no-repeat bg-right pl-[50px] bg-size-[800px]">
                 <div className=" flex flex-col items-baseline gap-[28px] w-6/12">
 
@@ -18,10 +18,12 @@ const Green = () => {
                         <p className="text-white font-light">Free shipping on all your order.</p>
                     </div>
 
+                    <Link to="/shop">
+                        <button className="w-[191px] h-[51px] bg-white text-mwvane flex items-center justify-center gap-[10px] rounded-4xl font-bold hover:bg-[#bac9bc] transition-colors duration-200 cursor-pointer">
+                            <ShopNow />
+                        </button>
 
-                    <button className="w-[191px] h-[51px] bg-white text-mwvane flex items-center justify-center gap-[10px] rounded-4xl font-bold">
-                        <ShopNow />
-                    </button>
+                    </Link>
 
                 </div>
             </div>

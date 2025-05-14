@@ -3,7 +3,7 @@ import ShopNow from "../Shop-Now/Shop-Now-component"
 
 const White = () => {
     return (
-        <div className="bg-[url('public/Home/summer-sale.png')] bg-no-repeat bg-cover col-start-3 row-start-1">
+        <div className="bg-[url('public/Home/summer-sale.png')] bg-no-repeat bg-cover col-start-3 row-start-1 max-sm:w-11/12 h-[300px]">
             <div className="flex flex-col items-baseline gap-[30px] p-[20px]">
                 <div>
                     <h3 className="text-[15px] font-semibold">Summer Sale</h3>

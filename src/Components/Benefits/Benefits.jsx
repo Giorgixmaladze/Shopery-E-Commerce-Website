@@ -2,7 +2,7 @@ import Benefit from "./benefit"
 
 const Benefits = () =>{
     return(
-        <div className="w-full h-[128px] shadow-xl rounded-xl flex justify-around">
+        <div className="w-full h-[128px] shadow-xl rounded-xl flex justify-around max-sm:flex-col max-sm:min-h-[400px] max-sm:items-center max-sm:w-11/12">
            
             <Benefit img= "public/Home/delivery-truck.png" header="Free Shipping" par="Free shipping on all your order"/>
             <Benefit img="public/Home/headset.png" header="Customer Support 24.7" par="Instant access to Support" />

@@ -6,7 +6,7 @@ const CategoriesBody = () => {
     const {categories} = useContext(AuthContext)
     
     return (
-        <div className="grid grid-cols-6 grid-rows-2 gap-[20px]">
+        <div className="grid grid-cols-6 grid-rows-2 gap-[20px] max-sm:grid-cols-2">
             {categories.map((item,index) =>{
                 return(
                     <CategoryCard key={index} img={item.img} name={item.name} />
