@@ -13,14 +13,14 @@ const fetchCategory = async () => {
 
 const getIndexes = (arr) =>{
   let randomIndexes = []
-  let randomProducts = []
-  for(let i = 0; i <10; i++){
+  let randomProducts = new Set()
+  for(let i = 0; i<10; i++){
     randomIndexes.push((Math.random() * arr.length - 1).toFixed(0))
   }
   randomIndexes.forEach(index =>{
-    randomProducts.push(arr[index])
+    randomProducts.add(arr[index])
   })
-  return randomProducts
+  return Array.from(randomProducts)
 }
 
 

@@ -12,7 +12,7 @@ const PopularProductsBody = () => {
                             <img src={item.image} alt="" />
                             <span>
                                 <h3>{item.name}</h3>
-                                <h3>{item.price}</h3>
+                                <h3>${item.price}</h3>
                             </span>
                             <button className="bg-[url('public/Home/Bag.png')]">
 
