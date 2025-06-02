@@ -5,6 +5,7 @@ import HomeIntro from "./Home-introduction"
 import { useContext } from "react"
 import { SidebarContext } from "../../context/SidebarContext"
 import Sidebar from "../../Components/Sidebar/Sidebar"
+import PopularProducts from "../../Components/Popular/PopularProducts"
 
 const Home = () => {
     const {sidebarOn} = useContext(SidebarContext)
@@ -20,6 +21,7 @@ const Home = () => {
                     <HomeIntro />
                     <Benefits />
                     <Categories />
+                    <PopularProducts/>
                 </div>
             </div>
 
