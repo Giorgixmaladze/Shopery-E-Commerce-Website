@@ -1,6 +1,6 @@
 const Benefit = ({img,header,par}) => {
     return (
-        <span className="flex items-center gap-[20px] max-sm:">
+        <span className="flex items-center gap-[20px] h-[128px] max-sm:">
             <img src={img} alt="" />
             <span className="flex flex-col gap-[10px">
                 <h3 className="font-semibold text-[19px]">{header}</h3>
