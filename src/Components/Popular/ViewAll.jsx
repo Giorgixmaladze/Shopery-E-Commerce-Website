@@ -5,7 +5,7 @@ const ViewAll = () => {
         <Link to="#">
             <span className="flex items-center gap-[10px]">
                 <p className="text-mwvane font-semibold">View all</p>
-                <img src="public/Home/arrow-right.png"/>
+                <img src="/Home/arrow-right.png"/>
             </span>
         </Link>
 

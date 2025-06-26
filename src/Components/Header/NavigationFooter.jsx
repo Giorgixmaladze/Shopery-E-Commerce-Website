@@ -7,7 +7,7 @@ const NavigationFooter = () =>{
     const {page,changePage} = useContext(AuthContext)
     
     return(
-        <div className="w-full flex justify-center items-center gap-[701px] h-[60px] bg-gray-800 max-sm:hidden">
+        <div className="w-full flex justify-center items-center gap-[701px] h-[60px] bg-gray-800 min-[375px]:hidden">
             <div className="flex items-center justify-center gap-[32px]">
                 <span className="flex gap-[5px] items-center">
                     <Link onClick={changePage} to="/" className={page ==="Home" ? "text-white":"text-gray-400"}>Home</Link>

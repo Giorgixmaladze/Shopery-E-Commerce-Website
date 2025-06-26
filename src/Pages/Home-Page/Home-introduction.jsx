@@ -8,7 +8,7 @@ const HomeIntro = () => {
 
     return (
       
-            <div className=" w-full h-[600px] grid grid-rows-2 gap-[20px]  grid-cols-3 max-sm:flex max-sm:flex-col max-sm:w-full max-sm:items-center">
+            <div className=" w-full h-[600px] grid grid-rows-2 gap-[20px]  grid-cols-3 min-[375px]:flex min-[375px]:flex-col min-[375px]:w-full min-[375px]:items-center min-md:flex min-md:flex-col min-md:items-center">
                 <Green />
                 <White />
                 <Deal />

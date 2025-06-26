@@ -2,8 +2,8 @@ import ViewAll from "./ViewAll"
 
 const CategoriesHeader = ({text}) =>{
     return(
-        <div className="w-full flex justify-between items-center max-sm:flex-col">
-            <h2 className="font-bold text-[38px]">{text}</h2>
+        <div className="w-full flex justify-between items-center min-[375px]:flex-col ">
+            <h2 className="font-bold text-[38px] min-md:text-3xl">{text}</h2>
             <ViewAll />
         </div>
     )

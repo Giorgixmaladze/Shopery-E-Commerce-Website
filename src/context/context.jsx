@@ -10,6 +10,8 @@ const AuthProvider = memo(({ children }) => {
     const [page, setPage] = useState("Home")
     const [categories,setCategories] = useState([])
     const [popProducts,setPopProducts] = useState(getIndexes(popularProducts)||[])
+    const [openedDetails,setOpenedDetails] = useState(false)
+    const [selectedProduct,setSelectedProduct] = useState(null)
 
     useEffect(() => {
         const loadCategories = async () => {
@@ -25,9 +27,18 @@ const AuthProvider = memo(({ children }) => {
         setPage(e.target.textContent)
     }
 
+    const openDetails = (product) =>{
+        setOpenedDetails(true)
+        setSelectedProduct(product)
+  
+    }
+    const closeDetails = () =>{
+        setOpenedDetails(false)
+       
+    }
 
     return (
-        <AuthContext.Provider value={{ categories, page, changePage,popProducts }}>
+        <AuthContext.Provider value={{ categories, page, changePage,popProducts,openedDetails,openDetails,closeDetails,selectedProduct }}>
             {children}
         </AuthContext.Provider>
     )

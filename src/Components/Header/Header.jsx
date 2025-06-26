@@ -5,9 +5,9 @@ const Header = () => {
     return (
         <header className="w-full">
 
-            <div className="w-full h-[42px] flex items-center justify-evenly max-sm:flex-col max-sm:h-40 ">
+            <div className="w-full h-[42px] flex items-center justify-evenly min-[375px]:flex-col min-[375px]:h-40 ">
                 <span className="flex items-center gap-2">
-                    <img src="public/navigation/Map-Pin.png" alt="" />
+                    <img src="/navigation/Map-Pin.png" alt="" />
                     <p className="text-sm font-light text-gray-600">Store Location: Lincoln- 344, illionis, Chicago, USA</p>
                 </span>
                 <div className="flex items-center gap-3">
