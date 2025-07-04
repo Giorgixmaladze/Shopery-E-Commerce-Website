@@ -4,7 +4,7 @@ import PopularProductsHeader from "./PopularProductsHeader"
 const PopularProducts = () =>{
 
     return(
-        <div className="w-11/12 flex flex-col gap-[50px] min-md:w-6/12">
+        <div className="w-11/12 flex flex-col gap-[50px] min-md:w-8/12">
             <PopularProductsHeader />
             <PopularProductsBody/>
         </div>

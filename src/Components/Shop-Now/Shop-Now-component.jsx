@@ -5,7 +5,7 @@ const ShopNow = () => {
         
         <span  className="font-bold text-mwvane flex items-center gap-[10px] ">
             Shop Now
-            <img src="public/Home/arrow-right.png" />
+            <img src="/Home/arrow-right.png" />
         </span>
     )
 }

@@ -6,6 +6,7 @@ import { useContext } from "react"
 import { SidebarContext } from "../../context/SidebarContext"
 import Sidebar from "../../Components/Sidebar/Sidebar"
 import PopularProducts from "../../Components/Popular/PopularProducts"
+import HotDeals from "../../Components/Deals/HotDeals"
 
 const Home = () => {
     const {sidebarOn} = useContext(SidebarContext)
@@ -22,6 +23,7 @@ const Home = () => {
                     <Benefits />
                     <Categories />
                     <PopularProducts/>
+                    {/* <HotDeals /> */}
                 </div>
             </div>
 

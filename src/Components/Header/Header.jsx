@@ -5,10 +5,10 @@ const Header = () => {
     return (
         <header className="w-full">
 
-            <div className="w-full h-[42px] flex items-center justify-evenly min-[375px]:flex-col min-[375px]:h-40 ">
+            <div className="w-full h-[42px] flex items-center justify-evenly min-[375px]:flex-col min-[375px]:h-40 min-lg:flex-row min-lg:h-15">
                 <span className="flex items-center gap-2">
                     <img src="/navigation/Map-Pin.png" alt="" />
-                    <p className="text-sm font-light text-gray-600">Store Location: Lincoln- 344, illionis, Chicago, USA</p>
+                    <p className="text-sm font-light text-gray-600" >Store Location: Lincoln- 344, illionis, Chicago, USA</p>
                 </span>
                 <div className="flex items-center gap-3">
                     <select className=" text-sm font-light bg-white border border-white text-gray-600 text h-15 w-20 outline-0 px-4 py-2" name="lang" id="" defaultValue='en'>
