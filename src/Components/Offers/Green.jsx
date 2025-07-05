@@ -2,7 +2,7 @@ import ShopNow from "../Shop-Now/Shop-Now-component"
 import { Link } from "react-router-dom"
 const Green = () => {
     return (
-        <div className="w-[872px] h-[600px] rounded-[10px] bg-linear-to-r row-start-1 col-start-1 from-[#003817] to-[#00c45f] min-[375px]:hidden min-md:w-6/12 min-md:h-[800px] min-lg:flex min-lg:h-[500px] min-lg:w-12/12 ">
+        <div className="w-[872px] h-[600px] rounded-[10px] bg-linear-to-r row-start-1 col-start-1 from-[#003817] to-[#00c45f] min-[375px]:hidden min-md:w-6/12 min-md:h-[800px] min-lg:flex min-lg:h-[500px] min-lg:w-12/12 min-lg:col-start-1 min-lg:col-end-3 min-lg:row-start-1 min-lg:row-end-3  ">
             <div className="bg-[url('/Home/girl.png')] w-full h-full flex items-center bg-no-repeat bg-right pl-[50px] bg-size-[800px] min-md:bg-size-[600px]">
                 <div className=" flex flex-col items-baseline gap-[28px] w-6/12">
 

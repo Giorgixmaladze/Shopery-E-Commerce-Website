@@ -18,12 +18,12 @@ const Home = () => {
                     <Sidebar />
                 ):(<p></p>)}
                 <Header />
-                <div className="w-[1319px] min-h-screen flex flex-col gap-[50px] min-[375px]:w-screen min-[375px]:items-center min-md:items-center ">
+                <div className="w-[1319px] min-h-screen flex flex-col gap-[50px] min-[375px]:w-screen min-[375px]:items-center min-md:items-cente min-lg:w-11/12 ">
                     <HomeIntro />
                     <Benefits />
                     <Categories />
                     <PopularProducts/>
-                    {/* <HotDeals /> */}
+                    <HotDeals />
                 </div>
             </div>
 

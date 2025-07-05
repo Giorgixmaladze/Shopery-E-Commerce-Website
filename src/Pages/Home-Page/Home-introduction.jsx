@@ -14,16 +14,17 @@ const HomeIntro = () => {
   min-[375px]:flex min-[375px]:flex-col min-[375px]:items-center 
   min-md:flex min-md:flex-col min-md:items-center
         min-lg:gap-5
+        min-xl:w-10/12
 ">
-            <div className="min-lg:col-start-1 min-lg:col-end-3 min-lg:row-start-1 min-lg:row-end-3  ">
-                <Green />
-            </div>
-            <div className="min-lg:col-start-3">
-                <White />
-            </div>
-            <div className=" row-start-2 col-start-3 col-end-4">
-                <Deal />
-            </div>
+
+            <Green />
+
+
+            <White />
+
+
+            <Deal />
+
         </div>
 
 

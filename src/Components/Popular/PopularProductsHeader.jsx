@@ -6,7 +6,7 @@ import PopularProductsBody from "./PopularProductsBody"
 
 const PopularProductsHeader = () =>{
     return(
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center min-[375px]:flex-col min-lg:flex-row">
            <h1 className="text-[38px] font-bold">Popular Products</h1>
            <ViewAll /> 
         </div>
