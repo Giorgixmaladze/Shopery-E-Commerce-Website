@@ -274,7 +274,7 @@ const deals = [
     name: "Blackberry",
     description: "A dark purple-black aggregate fruit with sweet-tart taste.",
     nutrients: ["Vitamin C", "Fiber", "Manganese"],
-    image: "https://media.barakatfresh.ae/media/catalog/product/cache/991eeaa3837399618b43d1cd04e346f4/b/l/blackberry-125g.jpg"
+    image: "https://www.northernbrewer.com/cdn/shop/products/43407-crystallized-citrus_blackberry_1c0e8c6c-340f-4228-9655-b659d482524c_x700.jpg?v=1610743085"
   },
   {
     name: "Fig",

@@ -3,22 +3,26 @@ import CategoriesHeader from "../Popular/Categories-header"
 import { AuthContext } from "../../context/context"
 
 
-const HotDeals = () =>{
-    const {randomDeals} = useContext(AuthContext)
+const HotDeals = () => {
+    const { openDetails,randomDeals } = useContext(AuthContext)
 
-    return(
-        <div className="w-full bg-gray-100">
-            <CategoriesHeader text="Hot Deals" />    
-            {
-                randomDeals.map((item,index) =>{
-                    return(
-                        <div>
-                            <img src={item.image} alt="" />
-                            <h2>{item.name}</h2>
-                        </div>
-                    )
-                })
-            }
+    return (
+        <div className="w-full bg-white">
+            <CategoriesHeader text="Hot Deals" />
+            <div className="grid min-[375px]: grid-cols-2">
+
+                {
+                    randomDeals.map((item, index) => {
+                        return (
+                            <div onClick={() => openDetails(item)} className="border border-gray-400 flex flex-col items-center gap-5">
+                                <img className="w-10/12" src={item.image} alt="" />
+                                <h2>{item.name}</h2>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+
 
         </div>
     )
