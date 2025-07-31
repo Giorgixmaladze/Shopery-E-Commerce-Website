@@ -18,7 +18,7 @@ const Home = () => {
                     <Sidebar />
                 ):(<p></p>)}
                 <Header />
-                <div className="w-[1319px] min-h-screen flex flex-col gap-[50px] min-[375px]:w-screen min-[375px]:items-center min-md:items-cente min-lg:w-11/12 ">
+                <div className="w-[1319px] min-h-screen flex flex-col gap-[60px] min-[375px]:w-screen min-[375px]:items-center min-md:items-cente min-lg:w-11/12">
                     <HomeIntro />
                     <Benefits />
                     <Categories />

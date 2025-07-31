@@ -4,7 +4,7 @@ import ProductDetails from "../Product Details/ProductDetails"
 const PopularProductsBody = () => {
     const { popProducts, openedDetails, openDetails } = useContext(AuthContext)
     return (
-        <div className="grid grid-cols-5 min-[375px]:grid-cols-2 min-md:grid-cols-3 min-xl:grid-cols-4">
+        <div className="grid  min-[375px]:grid-cols-2 min-md:grid-cols-3 min-xl:grid-cols-4">
             {
                 popProducts.map((item, index) => {
                     return (

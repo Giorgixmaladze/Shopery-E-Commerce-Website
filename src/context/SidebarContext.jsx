@@ -7,7 +7,7 @@ const SidebarProvider = ({ children }) => {
 
     const handleSidebar = () => {
         setSidebarOn(!sidebarOn)
-        console.log(sidebarOn)
+
     }
 
     return (

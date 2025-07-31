@@ -4,6 +4,7 @@ import { fetchCategory, getIndexes } from "../services/api";
 import { useEffect } from "react";
 import { popularProducts } from "../services/list";
 import deals from "../services/hotDeals";
+
 export const AuthContext = createContext()
 
 
@@ -42,7 +43,7 @@ const AuthProvider = memo(({ children }) => {
     const getRandomDeals = () => {
         let index = 0
         while (randomDeals.size < 10) {
-            index = (Math.random() * hotDeals.length - 2).toFixed(0)
+            let index = Math.floor(Math.random() * hotDeals.length)
             if (index >= 0) {
                 randomDeals.add(hotDeals[index])
             }
@@ -50,7 +51,7 @@ const AuthProvider = memo(({ children }) => {
         }
 
         randomDeals = Array.from(randomDeals)
-        console.log(randomDeals)
+     
 
     }
     getRandomDeals()

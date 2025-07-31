@@ -19,8 +19,6 @@ const getIndexes = (arr) => {
     randomProducts.add(arr[i]);
   }
 
-  console.log(randomIndexes)
-  console.log(Array.from(randomProducts))
   return Array.from(randomProducts)
 }
 
