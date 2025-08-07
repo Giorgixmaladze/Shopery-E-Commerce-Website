@@ -7,11 +7,11 @@ import { SidebarContext } from "../../context/SidebarContext"
 import Sidebar from "../../Components/Sidebar/Sidebar"
 import PopularProducts from "../../Components/Popular/PopularProducts"
 import HotDeals from "../../Components/Deals/HotDeals"
-<<<<<<< HEAD
+
 import Posters from "../../Components/Offers/Posters"
-=======
-import BlackPoster from "../../Components/Offers/BlackPoster"
->>>>>>> fc48e7c0257ee44c1534ed5b01d8bad14bf3b293
+
+
+
 
 const Home = () => {
     const {sidebarOn} = useContext(SidebarContext)
@@ -29,11 +29,9 @@ const Home = () => {
                     <Categories />
                     <PopularProducts/>
                     <HotDeals />
-<<<<<<< HEAD
+
                     <Posters />
-=======
-                    <BlackPoster />
->>>>>>> fc48e7c0257ee44c1534ed5b01d8bad14bf3b293
+
                 </div>
             </div>
 
