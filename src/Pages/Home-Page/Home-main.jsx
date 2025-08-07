@@ -9,6 +9,7 @@ import PopularProducts from "../../Components/Popular/PopularProducts"
 import HotDeals from "../../Components/Deals/HotDeals"
 
 import Posters from "../../Components/Offers/Posters"
+import ClientTestimonials from "../../Components/Client Testimonial/ClientTestimonials"
 
 
 
@@ -29,8 +30,8 @@ const Home = () => {
                     <Categories />
                     <PopularProducts/>
                     <HotDeals />
-
                     <Posters />
+                    <ClientTestimonials />
 
                 </div>
             </div>
