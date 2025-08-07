@@ -17,7 +17,7 @@ const HotDeals = () => {
                     randomDeals.map((item, index) => {
                         return (
                             <div onClick={() => openDetails(item)} className="border border-gray-200 flex flex-col items-center gap-5 justify-center">
-                                <img src={item.image} alt="" />
+                                <img className="w-7/12" src={item.image} alt="" />
                                 <div className="flex min-[375px]: items-center min-[375px]: gap-5">
                                     <span>
                                         <h2>{item.name}</h2>
