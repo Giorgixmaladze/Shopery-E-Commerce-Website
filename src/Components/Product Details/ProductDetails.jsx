@@ -5,7 +5,7 @@ const ProductDetails = () => {
     const { closeDetails, selectedProduct } = useContext(AuthContext)
     return (
         <div className="w-screen bg-black fixed top-0 left-0 opacity-90 h-screen flex items-center justify-center">
-            <div className="bg-white fixed min-[375px]:w-11/12 min-[375px]:h-7/12 rounded-[10px] flex min-[375px]:justify-center min-xl:w-6/12">
+            <div className="bg-white fixed min-[375px]:w-11/12 min-[375px]:h-7/12 rounded-[10px] flex min-[375px]:justify-center min-xl:w-6/12 min-lg:w-6/12 min-lg:h-9/12">
                 <div className="w-full">
                     <span class="material-symbols-outlined absolute min-[375px]:left-[10px] min-[375px]:top-[10px]" onClick={closeDetails}>
                         close

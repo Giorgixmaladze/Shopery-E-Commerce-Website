@@ -7,6 +7,7 @@ import { SidebarContext } from "../../context/SidebarContext"
 import Sidebar from "../../Components/Sidebar/Sidebar"
 import PopularProducts from "../../Components/Popular/PopularProducts"
 import HotDeals from "../../Components/Deals/HotDeals"
+import BlackPoster from "../../Components/Offers/BlackPoster"
 
 const Home = () => {
     const {sidebarOn} = useContext(SidebarContext)
@@ -24,6 +25,7 @@ const Home = () => {
                     <Categories />
                     <PopularProducts/>
                     <HotDeals />
+                    <BlackPoster />
                 </div>
             </div>
 
