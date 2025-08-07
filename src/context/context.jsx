@@ -3,6 +3,7 @@ import { fetchCategory, getIndexes } from "../services/api";
 import { popularProducts } from "../services/list";
 import deals from "../services/hotDeals";
 import { memo } from "react";
+import testimonials from "../services/testimonials";
 
 export const AuthContext = createContext();
 
@@ -40,6 +41,31 @@ const AuthProvider = ({ children }) => {
     };
     const closeDetails = () => setOpenedDetails(false);
 
+
+
+
+    let testimonialIndex = 0
+    let currentTestimonials = []
+    const showTestimonial = (newIndex) =>{
+        testimonialIndex = newIndex
+        if(testimonialIndex >= testimonials.length){
+            testimonialIndex = 0
+        }else if(testimonialIndex < 0){
+            testimonialIndex = testimonials.length-1
+        }else{
+            currentTestimonials = [testimonials[testimonialIndex], testimonials[testimonialIndex + 1], testimonials[testimonialIndex + 2]]
+        }
+    }
+
+    const nextTestimonial = () =>{
+        testimonialIndex ++
+        showTestimonial(testimonialIndex)
+    }
+    const previousTestimonial = () =>{
+        testimonialIndex --
+        showTestimonial(testimonialIndex)
+    }
+
     return (
         <AuthContext.Provider
             value={{
@@ -51,7 +77,10 @@ const AuthProvider = ({ children }) => {
                 openDetails,
                 closeDetails,
                 selectedProduct,
-                randomDeals
+                randomDeals,
+                showTestimonial,
+                nextTestimonial,
+                previousTestimonial
             }}
         >
             {children}
