@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Navigation from "./Navigation"
 
 const Header = () => {
@@ -21,7 +22,7 @@ const Header = () => {
                     </select>
                     <div className="w-0 h-5 border border-collapse-collapse border-gray-400"></div>
                     <span>
-                        <a href="#" className="text-sm font-light text-gray-600">Sign In</a> <span className="text-sm text-gray-600 font-light">/</span> <a href="#" className="text-sm font-light text-gray-600">Sign Up</a>
+                        <a href="#" className="text-sm font-light text-gray-600">Sign In</a> <span className="text-sm text-gray-600 font-light">/</span> <Link to="/signup" className="text-sm font-light text-gray-600">Sign Up</Link>
                     </span>
                 </div>
             </div>
